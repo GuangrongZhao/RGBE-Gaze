@@ -1,4 +1,3 @@
-# remote_gazetracking
 # RGBE-Gaze:Journey Towards High Frequency Remote Gaze Tracking with Event Cameras
 ## Introduction RGBE-Gaze
 
