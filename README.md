@@ -21,9 +21,10 @@ This directory contains 66 subdirectories corresponding to 66 participants i.e.,
 │ │ │ │ ..........
 │ │ │ └─exp6
 │ │ │ ..........
-└─user_2
+├─user_2
 ..........
-└─user_66 
+├─user_66
+  ```
 --------------------
 
 #### 2. Data_davis_labelled_with_mask
