@@ -28,28 +28,18 @@ This directory contains 66 subdirectories corresponding to 66 participants i.e.,
 #### 2. convert2eventspace
 **convert2eventspace** offers the RGB Images converted from the raw RGB Images using the homography matrix T_{h} i.e., 'matlab_processed/tform_total.mat', the homography matrix T_{h} is calculated using the code 'matlab_processed/twoimage_homography.m', and the code transforms the 66 participant's raw RGB Images to align the event stream's space is presented in  'matlab_processed/transfer_image_homography.m'. 
 
-In addition, the **convert2eventspace** folder include three txt file.
+In addition, the **convert2eventspace** folder include three '.txt' file.
 - **timestamp.txt** in convert2eventspace records the internal hardware timestamp provided by FLIR BFS-U3-16S2C.
 - **timestamp_win.txt** records the Windows system time provided by function 'time.time()' in Python, the first two lines represent the moments before and after the FLIR camera acquisition interface is activated.
 - **timestamp_cpu.txt** records the CPU timestamp provided by function 'cv2.getTickCount' of opencv, the first two lines also represent the moments before and after the FLIR camera acquisition interface is activated.
 
 
 
-#### 3. Data_tobii
-**Data_tobii** includes the gaze references provided by Tobii Pro Glasses 3. The detailed description about `gazedata`, `scenevideo`, `imudata` and `eventdata` can be find in: [https://www.tobii.com/products/eye-trackers/wearables/tobii-pro-glasses-3#form](https://www.tobii.com/products/eye-trackers/wearables/tobii-pro-glasses-3#form). The `tobiisend.txt` file records the system time of the computer when TTL signal is send to Tobii Pro Glasses 3, the `tobiittl.txt` records the TTL signal receiving time in the glasses internal clock. 
+#### 3. prophesee
+**prophesee** 
   ```
-  -Data_tobii
-  ├─ user1 
-  │  ├─tobiisend.txt
-  │  ├─tobiittl.txt
-  │  ├─session_1_0_1
-  │        ├─gazedata
-  │        ├─scenevideo
-  │        ├─imudata
-  │        ├─eventdata
-  |  ..........
-  ```
-  
+
+
 --------------------
 
 #### 4. Data_davis_pupil_iris_label
