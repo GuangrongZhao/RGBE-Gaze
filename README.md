@@ -26,18 +26,22 @@ This directory contains 66 subdirectories corresponding to 66 participants i.e.,
 --------------------
 
 #### 2. convert2eventspace
-**convert2eventspace** offers the RGB Images converted from the raw RGB Images using the homography matrix T_{h} i.e., 'matlab_processed/tform_total.mat', the homography matrix T_{h} is calculated using the code 'matlab_processed/twoimage_homography.m', and the code transforms the 66 participant's raw RGB Images to align the event stream's space is presented in  'matlab_processed/transfer_image_homography.m'. 
+**convert2eventspace** folder offers the RGB Images converted from the raw RGB Images using the homography matrix T_{h} i.e., 'matlab_processed/tform_total.mat', the homography matrix T_{h} is calculated using the code 'matlab_processed/twoimage_homography.m', and the code transforms the 66 participant's raw RGB Images to align the event stream's space is presented in  'matlab_processed/transfer_image_homography.m'. 
 
 In addition, the **convert2eventspace** folder include three '.txt' file.
-- **timestamp.txt** in convert2eventspace records the internal hardware timestamp provided by FLIR BFS-U3-16S2C.
+- **timestamp.txt** records the internal hardware timestamp provided by FLIR BFS-U3-16S2C.
 - **timestamp_win.txt** records the Windows system time provided by function 'time.time()' in Python, the first two lines represent the moments before and after the FLIR camera acquisition interface is activated.
 - **timestamp_cpu.txt** records the CPU timestamp provided by function 'cv2.getTickCount' of opencv, the first two lines also represent the moments before and after the FLIR camera acquisition interface is activated.
 
 
-
 #### 3. prophesee
-**prophesee** 
-  ```
+**prophesee** folder offers **event_merge.npz**, it provides a record of the event stream in the npz form.
+In addition, the **prophesee** folder include two '.txt' file.
+- **event_win.txt** records the Windows system time provided by function 'time.time()' in Python, the first two lines represent the moments before and after the prophesee camera acquisition interface is activated, and the last two line represent the moment when the first event and the last event are recorded.
+- **event_cpu.txt** records the CPU timestamp provided by function 'cv2.getTickCount' of OpenCV., the first two lines also represent the moments before and after the prophesee camera acquisition interface is activated, and the last two line represent the moment when the first event and the last event are recorded.
+
+
+
 
 
 --------------------
