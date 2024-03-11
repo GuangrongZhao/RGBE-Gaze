@@ -45,8 +45,8 @@ In addition, the **prophesee** folder include two '.txt' file.
 **gazepoint** folder offers **gazepoint.csv**, the introduction of different type of gaze reference data can be found in  (https://usabilityin.ru/wp-content/uploads/2017/12/Gazepoint-API.pdf).
 
 In addition, the **gazepoint** folder include another two '.txt' file.
-- **time_win.txt** records the Windows system time provided by function 'time.time()' in Python, the second line represents the moment when the computer received the first ACK message of gazepoint are recorded.
-- **time_cpu.txt** records the CPU timestamp provided by function 'cv2.getTickCount' of OpenCV, the second line represents the moment when the computer received the first ACK message of gazepoint are recorded.
+- **time_win.txt** records the Windows system time provided by function 'time.time()' in Python, the second line represents the moment when the computer received the first ACK message of gazepoint.
+- **time_cpu.txt** records the CPU timestamp provided by function 'cv2.getTickCount' of OpenCV, the second line represents the moment when the computer received the first ACK message of gazepoint.
 
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
