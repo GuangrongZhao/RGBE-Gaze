@@ -24,7 +24,7 @@ This directory contains 66 subdirectories corresponding to 66 participants i.e.,
 --------------------
 
 #### 1. convert2eventspace
-**convert2eventspace** folder offers the RGB Images converted from the raw RGB Images using the homography matrix T_{h} i.e., 'align_frame_event_pixel/tform_total.mat', the homography matrix T_{h} is calculated using the code 'align_frame_event_pixel/twoimage_homography.m', and the code transforms the 66 participant's raw RGB Images to align the event stream's space is presented in  'matlab_processed/align_frame_event_pixel/transfer_image_homography.m'. 
+**convert2eventspace** folder offers the RGB Images converted from the raw RGB Images using the homography matrix T_{h} i.e., 'align_frame_event_pixel/tform_total.mat', the homography matrix T_{h} is calculated using the code 'align_frame_event_pixel/calculate_homography.m', and the code transforms the 66 participant's raw RGB Images to align the event stream's space is presented in  'align_frame_event_pixel/transfer_image_homography.m'. 
 
 In addition, the **convert2eventspace** folder include three '.txt' file.
 - **timestamp.txt** records the internal hardware timestamp provided by FLIR BFS-U3-16S2C.
