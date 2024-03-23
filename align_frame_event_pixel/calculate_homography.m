@@ -114,4 +114,3 @@ imshow(C)
 end
 
 mean(mse_list)
-%0.0305
