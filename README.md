@@ -81,11 +81,7 @@ In addition, the **gazepoint** folder include another two '.txt' file.
 
 
 ## Running the Benchmark
-Four metrics are adopted for the dataset evaluation, namely **IoU and F1 score**, **Pixel error (PE) of frame-based pupil segmentation**, **PE of event-based pupil tracking**, **Difference of direction (DoD) in gaze tracking**. 
-
-* The **IoU and F1 score** are used to evaluate pupil region segmentation task, and we use pytorch framework in Python to train and evaluate our DL-based Pupil Segmentation network.
-
-* The **PE of frame-based pupil segmentation**, **PE of event-based pupil tracking**, **DoD in gaze tracking** implemented through Matlab code.
+We adopt the most commonly used metric, in remote gaze tracking tasks, i.e., **angular error (in degree)**, to evaluate various benchmarking methods.
  
 ### Download Dataset
 
