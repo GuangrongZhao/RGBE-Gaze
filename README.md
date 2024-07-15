@@ -148,12 +148,12 @@ The following code provides the evaluation method:
 python evaluation_voxel_grid_pair.py --datasetpath RGBE_Gaze_dataset
 ```
 
-If you want to run another benchmark, you can run the following command similar to RGBE-Gaze method:
+If you want to run another benchmark i.e., RGBE-Gaze (w/o EB) , you can run the following command in a similar manner to the RGBE-Gaze method for training and evaluation.
 ```
 python train_voxel_grid_pair_only_frame_branch.py
 python evaluation_voxel_grid_pair_only_frame_branch.py
 ```
-The code for other frame based methods is in the **frame_based_benchmarking_methods** folder, you can also run them similar to RGBE-Gaze method.
+The code for other frame-based methods is located in the **frame_based_benchmarking_methods** folder, and you can run them in a similar manner to the RGBE-Gaze method.
 #### Evaluation result
 The following is the average angular errors of different subjects with different gaze tracking methods.
 <div align=center style="display:flex;">
