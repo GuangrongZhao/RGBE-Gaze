@@ -1,21 +1,21 @@
 # RGBE-Gaze:Journey Towards High Frequency Remote Gaze Tracking with Event Cameras
 ## Citation
-If you need the original paper in PDF format, please visit: https://openreview.net/pdf?id=bmfMNIf1bU, as well as access to supplemental materials through: https://openreview.net/attachment?id=bmfMNIf1bU&name=supplementary_material. If you are using this dataset in your paper, please cite the following paper :
+ If you are using this dataset in your paper, please cite the following paper :
 ```
 @inproceedings{  
-  title = {EV-Eye: Rethinking High-frequency Eye Tracking through the Lenses of Event Cameras},  
-  author = {Guangrong Zhao, Yurun Yang, Jingwei Liu, Ning Chen, Yiran Shen, Hongkai Wen, Guohao Lan},
-  booktitle = {37th Conference on Neural Information Processing Systems Datasets and Benchmarks Track, New Orleans, USA},
-  year = {2023}  
+  title = {RGBE-Gaze: A Large-scale Event-based Multimodal Dataset for High Frequency Remote Gaze Tracking},  
+  author = {Guangrong Zhao, Yiran Shen, Chenlong Zhang, Zhaoxin Shen, Yuanfeng Zhou and Hongkai Wen},
+  booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  year = {2024}  
 } 
 ```
 ## Introduction RGBE-Gaze
-EV-Eye introduces the largest and most diverse multi-modal frame-event dataset for high frequency eye tracking in the literature. 
+RGBE-Gaze introduces first event-based large-scale and multimodal dataset for high-frequency remote gaze tracking in the literature. 
 <div align=center style="display:flex;">
   <img src="picture/total_sample(1) (1)_00.png" alt="iou" style="flex:1;" width="320" height="180">
 </div>
 
-EV-Eye proposes a novel hybrid frame-event eye tracking benchmarking approach tailored to the collected dataset, capable of tracking the pupil at a frequency up to 38.4kHz. 
+RGBE-Gaze present a hybrid frame-event based gaze tracking benchmarking method tailored to the collected dataset.
 <div align=center style="display:flex;">
  <img src="picture/system_overview_new_00.png" alt="iou" style="flex:1;" width="900" height="300" >
 </div>
@@ -25,10 +25,11 @@ EV-Eye proposes a novel hybrid frame-event eye tracking benchmarking approach ta
 [//]: # (![summary]&#40;pictures/main.jpg&#41;)
 
 <br/>
-The EV-Eye dataset can be found at: https://1drv.ms/f/s!Ar4TcaawWPssqmu-0vJ45vYR3OHw. The alternative BaiduNetdisk link is: https://pan.baidu.com/s/1luJ84eXsaWNaed5FmKxXhA?pwd=evye, Extract code: evye
+The RGBE-Gaze dataset can be found at: https://1drv.ms/f/s!Ar4TcaawWPssgo0XDpkxH4OQBvrgiw?e=7nbWEZ. 
+
 
 ## Overview
-The repository includes an introduction to EV-Eye **Dataset organization** and how to **Running the benchmark** in Python and Matlab. 
+The repository includes an introduction to  RGBE-Gaze **Dataset organization** and how to **Running the benchmark** in Python and Matlab. 
 
 ## Dataset Organization
 
