@@ -102,8 +102,8 @@ Please place the unzipped data in the `/path/to/RGBE_Gaze_dataset` directory and
   │  ├─pre_trained_models_for_event_method_eva
   │  ├─pre_trained_models_for_frame_method_eva
   │  ├─random_data_for_event_method_eva
-  │  ├─data_network_training_for_event_method_eva.rar
-  │  ├─data_network_training_for_frame_method_eva.rar
+  │  ├─data_network_training_for_event_method_eva
+  │  ├─data_network_training_for_frame_method_eva
 ```
 ### Process
 Note: please use Python >= 3.7.0
