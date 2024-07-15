@@ -120,7 +120,8 @@ To install requirements:
 pip install -r requirements.txt
 ```
 
-
+#### Preprocess
+Run the following command to do the preprocessing
 
 ```
 python normalization_example_for_convert_frame.py
@@ -128,7 +129,23 @@ python generate_events_voxelgrid.py
 matlab A1_makehdf5data_for_sample.m
 python voxelgrid_makehdf5.py
 ```
+#### Training
+To train the DL-based Pupil Segmentation network models, run this command:
 
+```
+python train.py 
+```
+
+Optional arguments can be passed :
+* `--whicheye`  to select which eye data to use for training, such as "L" or "R".
+* `--batch_size ` 
+
+#### Evaluation of **IoU and F1 score**
+The following code provides the calculation method of **IoU and F1 score**:
+
+```
+python evaluate.py 
+```
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
 Attribution-NonCommercial 4.0 International License</a>.
