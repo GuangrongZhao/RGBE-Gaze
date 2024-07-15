@@ -1,3 +1,8 @@
+
+
+#(Pre-processing is to reduce the variation in the subject’s head pose, which can make the learning-based approach more efficient)
+# the shape predictor 68 face landmarks.dat file can be download from  https://1drv.ms/f/s!Ar4TcaawWPssgo0XDpkxH4OQBvrgiw?e=7nbWEZ 
+
 import os
 import random
 
