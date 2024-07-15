@@ -12,7 +12,7 @@ If you need the original paper in PDF format, please visit: https://openreview.n
 ## Introduction RGBE-Gaze
 EV-Eye introduces the largest and most diverse multi-modal frame-event dataset for high frequency eye tracking in the literature. 
 <div align=center style="display:flex;">
-  <img src="picture/total_sample(1) (1)_00.png" alt="iou" style="flex:1;" width="350" height="180">
+  <img src="picture/total_sample(1) (1)_00.png" alt="iou" style="flex:1;" width="320" height="180">
 </div>
 
 EV-Eye proposes a novel hybrid frame-event eye tracking benchmarking approach tailored to the collected dataset, capable of tracking the pupil at a frequency up to 38.4kHz. 
