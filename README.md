@@ -130,7 +130,7 @@ matlab A1_makehdf5data_for_sample.m
 python voxelgrid_makehdf5.py
 ```
 #### Training
-To train the models, run this command:
+If you organize data folders as above,you can train the model using the following commands
 
 ```
 python train.py --data_path processed_data/data_network_training_for_event_method_eva/ 
