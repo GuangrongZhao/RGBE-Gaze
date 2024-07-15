@@ -154,8 +154,9 @@ python train_voxel_grid_pair_only_frame_branch.py
 python evaluation_voxel_grid_pair_only_frame_branch.py
 ```
 The code for other frame-based methods is located in the **frame_based_benchmarking_methods** folder, and you can run them in a similar manner to the RGBE-Gaze method.
-#### Evaluation result
-The following is the average angular errors of different subjects with different gaze tracking methods.
+#### Evaluation result for different subjects
+
+The following is the average angular errors of different subjects with different benchmarking_methods.
 <div align=center style="display:flex;">
  <img src="picture/different_methods_new_00.png" alt="iou" style="flex:1;" width="900" height="200" >
 </div>
