@@ -12,12 +12,12 @@ If you need the original paper in PDF format, please visit: https://openreview.n
 ## Introduction RGBE-Gaze
 EV-Eye introduces the largest and most diverse multi-modal frame-event dataset for high frequency eye tracking in the literature. 
 <div align=center style="display:flex;">
-  <img src="pictures/samples.png" alt="iou" style="flex:1;" width="350" height="180">
+  <img src="picture/total_sample(1) (1)_00.png" alt="iou" style="flex:1;" width="350" height="180">
 </div>
 
 EV-Eye proposes a novel hybrid frame-event eye tracking benchmarking approach tailored to the collected dataset, capable of tracking the pupil at a frequency up to 38.4kHz. 
 <div align=center style="display:flex;">
- <img src="pictures/main.jpg" alt="iou" style="flex:1;" width="900" height="300" >
+ <img src="picture/system_overview_new_00.png" alt="iou" style="flex:1;" width="900" height="300" >
 </div>
 
 [//]: # (![summary]&#40;pictures/samples.png&#41;)
@@ -105,6 +105,19 @@ Please place the unzipped data in the `/path/to/RGBE_Gaze_dataset` directory and
 ### Process
 
 #### Python Requirements
+```
+torch>=1.9.0
+numpy>=1.21.0
+tqdm>=4.61.1
+h5py>=3.2.1
+torchvision>=0.10.0
+argparse>=1.1
+```
+To install requirements:
+
+```angular2html
+pip install -r requirements.txt
+```
 
 ```
 python normalization_example_for_convert_frame.py
