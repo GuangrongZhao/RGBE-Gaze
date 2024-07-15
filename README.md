@@ -127,19 +127,20 @@ pip install -r requirements.txt
 Run the following command to do the preprocessing
 
 ```
-python normalization_example_for_convert_frame.py
-python generate_events_voxelgrid.py
-matlab A1_makehdf5data_for_sample.m
-python voxelgrid_makehdf5.py
+python normalization_example_for_convert_frame.py (refer to Section 4.3 Pre-processing of the paper,pre-processing is to reduce the variation in the subject’s head pose, which can make the learning-based approach more efficient)
+python generate_events_voxelgrid.py (Convert event stream to voxelgrid representation）
+matlab A1_makehdf5data_for_sample.m （Identify the temporally closest frame-event voxel pair to
+form the labelled samples used for training and testing) 
+python voxelgrid_makehdf5.py （Convert voxelgrid representation to hdf5 file）
 ```
 #### Training
-If you organize data folders as above,you can train the model using the following commands
+If you organize data folders as above,you can train the RGBE-Gaze model using the following commands
 
 ```
 python train_voxel_grid_pair.py --data_path RGBE_Gaze_dataset/processed_data/data_network_training_for_event_method_eva/ 
 --result_save_path RGBE_Gaze_dataset/processed_data/pre_trained_models_for_event_method_eva/checkpoints
 ```
- 
+ (The preprocessed data that can be used directly for network training tests can be found in: RGBE_Gaze_dataset/processed_data/data_network_training_for_event_method_eva)
 
 #### Evaluation
 The following code provides the evaluation method:
@@ -148,14 +149,14 @@ The following code provides the evaluation method:
 python evaluation_voxel_grid_pair.py --datasetpath RGBE_Gaze_dataset
 ```
 
-If you want to run another benchmark, you can run the following command
+If you want to run another benchmark, you can run the following command similar to RGBE-Gaze method:
 ```
 python train_voxel_grid_pair_only_frame_branch.py
 python evaluation_voxel_grid_pair_only_frame_branch.py
 ```
-The code for the other methods is in the **frame_based_benchmarking_methods** folder
+The code for other frame based methods is in the **frame_based_benchmarking_methods** folder, you can also run them similar to RGBE-Gaze method.
 #### Evaluation result
-The following is the evaluation result
+The following is the average angular errors of different subjects with different gaze tracking methods.
 <div align=center style="display:flex;">
  <img src="picture/different_methods_new_00.png" alt="iou" style="flex:1;" width="900" height="200" >
 </div>
