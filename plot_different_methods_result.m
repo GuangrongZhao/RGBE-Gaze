@@ -242,20 +242,20 @@ b=bar(x,y,0.9);
 
 
 
-set(b(1),'FaceColor',[246 83 20]/255) % 颜色调节
+set(b(1),'FaceColor',[246 83 20]/255) 
 
-set(b(2),'FaceColor',[124 187 0]/255)% 颜色调节
+set(b(2),'FaceColor',[124 187 0]/255)
 
-set(b(3),'FaceColor',[0 161 241]/255) % 颜色调节
+set(b(3),'FaceColor',[0 161 241]/255) 
 
-set(b(4),'FaceColor',[255 187 0]/255) % 颜色调节
+set(b(4),'FaceColor',[255 187 0]/255)
 
-set(b(5),'FaceColor',[0.49 0.18 0.56]) % 颜色调节
+set(b(5),'FaceColor',[0.49 0.18 0.56])
 
 
-% set(b(6),'FaceColor',[219 249 244]/255) % 颜色调节
+% set(b(6),'FaceColor',[219 249 244]/255)
 % 
-% set(b(7),'FaceColor',[0,0.78,0.55]) % 颜色调节
+% set(b(7),'FaceColor',[0,0.78,0.55])
 
 grid on;
 
