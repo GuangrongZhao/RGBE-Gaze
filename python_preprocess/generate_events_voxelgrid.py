@@ -1,3 +1,5 @@
+# Convert event stream to voxelgrid representation
+
 import os
 from tqdm import tqdm
 import numpy as npc
