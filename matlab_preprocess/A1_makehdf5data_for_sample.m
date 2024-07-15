@@ -1,3 +1,4 @@
+% Identify the temporally closest frame-event voxel pair to form the labelled samples used for training and testing
 clc
 clear all
 close all
