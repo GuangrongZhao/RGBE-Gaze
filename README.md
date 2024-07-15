@@ -142,8 +142,8 @@ Optional arguments can be passed :
 * `--whicheye`  to select which eye data to use for training, such as "L" or "R".
 * `--batch_size ` 
 
-#### Evaluation of **IoU and F1 score**
-The following code provides the calculation method of **IoU and F1 score**:
+#### Evaluation
+The following code provides the evaluation method:
 
 ```
 python evaluate.py 
