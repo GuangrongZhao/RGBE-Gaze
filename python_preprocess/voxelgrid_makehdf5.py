@@ -1,3 +1,5 @@
+% Convert voxelgrid representation to hdf5 file
+
 import os
 from tqdm import tqdm
 import numpy as np
