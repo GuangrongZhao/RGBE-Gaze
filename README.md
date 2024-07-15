@@ -159,8 +159,9 @@ python evaluation_voxel_grid_pair_only_frame_branch.py
 ```
 The code for the other methods is in the **frame_based_benchmarking_methods** folder
 #### Evaluation result
+The following is the evaluation result
 <div align=center style="display:flex;">
- <img src="picture/different_methods_new_00.png" alt="iou" style="flex:1;" width="900" height="300" >
+ <img src="picture/different_methods_new_00.png" alt="iou" style="flex:1;" width="900" height="200" >
 </div>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
