@@ -38,19 +38,20 @@ This directory contains 66 subdirectories corresponding to 66 participants i.e.,
 
   ```
  ─ RGBE_Gaze_dataset
-├─user_1
-│ ├─eye
-│ │ ├─exp1
-│ │ │ │ ├─convert2eventspace
-│ │ │ │ ├─prophesee
-│ │ │ │ ├─gazepoint
-│ │ │ │ ├─click_gt_cpu.txt
-│ │ │ ├─exp2
-│ │ │ │ ..........
-│ │ │ └─exp6
-├─user_2
-..........
-├─user_66
+├─ raw_data
+|  ├─user_1
+|  │ ├─eye
+|  │ │ ├─exp1
+|  │ │ │ │ ├─convert2eventspace
+|  │ │ │ │ ├─prophesee
+|  │ │ │ │ ├─gazepoint
+|  │ │ │ │ ├─click_gt_cpu.txt
+|  │ │ │ ├─exp2
+|  │ │ │ │ ..........
+|  │ │ │ └─exp6
+|  ├─user_2
+  ..........
+|  ├─user_66
   ```
 --------------------
 
@@ -94,7 +95,12 @@ Please place the unzipped data in the `/path/to/RGBE_Gaze_dataset` directory and
 
 ```angular2html
   RGBE_Gaze_dataset
-  ├─ raw_data 
+  ├─ raw_data
+  │  ├─user_1
+  │  ├─user_2
+  │  ├─user_3
+    ...........
+  
   ├─ processed_data 
   │  ├─pre_trained_models_for_event_method_eva
   │  ├─pre_trained_models_for_frame_method_eva
@@ -142,6 +148,11 @@ python train_voxel_grid_pair.py --data_path RGBE_Gaze_dataset/processed_data/dat
 #### Evaluation
 The following code provides the evaluation method:
 
+```
+python evaluation_voxel_grid_pair.py --datasetpath RGBE_Gaze_dataset
+```
+
+If you want to run another benchmark, you can run the following command
 ```
 python evaluation_voxel_grid_pair.py --datasetpath RGBE_Gaze_dataset
 ```
