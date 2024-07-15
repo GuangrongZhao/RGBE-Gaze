@@ -103,6 +103,7 @@ Please place the unzipped data in the `/path/to/RGBE_Gaze_dataset` directory and
   │  ├─data_network_training_for_frame_method_eva.rar
 ```
 ### Process
+Note: please use Python >= 3.7.0
 
 #### Python Requirements
 ```
@@ -118,6 +119,8 @@ To install requirements:
 ```angular2html
 pip install -r requirements.txt
 ```
+
+
 
 ```
 python normalization_example_for_convert_frame.py
