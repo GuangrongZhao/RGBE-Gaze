@@ -11,6 +11,24 @@ If you need the original paper in PDF format, please visit: https://openreview.n
 ```
 ## Introduction RGBE-Gaze
 EV-Eye introduces the largest and most diverse multi-modal frame-event dataset for high frequency eye tracking in the literature. 
+<div align=center style="display:flex;">
+  <img src="pictures/samples.png" alt="iou" style="flex:1;" width="350" height="180">
+</div>
+
+EV-Eye proposes a novel hybrid frame-event eye tracking benchmarking approach tailored to the collected dataset, capable of tracking the pupil at a frequency up to 38.4kHz. 
+<div align=center style="display:flex;">
+ <img src="pictures/main.jpg" alt="iou" style="flex:1;" width="900" height="300" >
+</div>
+
+[//]: # (![summary]&#40;pictures/samples.png&#41;)
+[//]: # ()
+[//]: # (![summary]&#40;pictures/main.jpg&#41;)
+
+<br/>
+The EV-Eye dataset can be found at: https://1drv.ms/f/s!Ar4TcaawWPssqmu-0vJ45vYR3OHw. The alternative BaiduNetdisk link is: https://pan.baidu.com/s/1luJ84eXsaWNaed5FmKxXhA?pwd=evye, Extract code: evye
+
+## Overview
+The repository includes an introduction to EV-Eye **Dataset organization** and how to **Running the benchmark** in Python and Matlab. 
 
 ## Dataset Organization
 
@@ -60,6 +78,44 @@ In addition, the **gazepoint** folder include another two '.txt' file.
 - **time_cpu.txt** records the CPU timestamp provided by function 'cv2.getTickCount' of OpenCV, the second line represents the moment when the computer received the first ACK message of gazepoint.
 
 
+## Running the Benchmark
+Four metrics are adopted for the dataset evaluation, namely **IoU and F1 score**, **Pixel error (PE) of frame-based pupil segmentation**, **PE of event-based pupil tracking**, **Difference of direction (DoD) in gaze tracking**. 
+
+* The **IoU and F1 score** are used to evaluate pupil region segmentation task, and we use pytorch framework in Python to train and evaluate our DL-based Pupil Segmentation network.
+
+* The **PE of frame-based pupil segmentation**, **PE of event-based pupil tracking**, **DoD in gaze tracking** implemented through Matlab code.
+ 
+### Download Dataset
+
+You can download the `raw_data` and `processed_data` in **RGBE_Gaze_dataset** from [https://1drv.ms/f/s!Ar4TcaawWPssqmu-0vJ45vYR3OHw]( https://1drv.ms/f/s!Ar4TcaawWPssgo0XDpkxH4OQBvrgiw?e=7nbWEZ) to the `/path/to/RGBE_Gaze_dataset` directory and unzip them:
+
+
+Please place the unzipped data in the `/path/to/RGBE_Gaze_dataset` directory and arrange it according to the following path.
+
+```angular2html
+  RGBE_Gaze_dataset
+  ├─ raw_data 
+  ├─ processed_data 
+  │  ├─pre_trained_models_for_event_method_eva
+  │  ├─pre_trained_models_for_frame_method_eva
+  │  ├─random_data_for_event_method_eva
+  │  ├─data_network_training_for_event_method_eva.rar
+  │  ├─data_network_training_for_frame_method_eva.rar
+```
+### Process
+
+#### Python Requirements
+
+```
+python normalization_example_for_convert_frame.py
+python generate_events_voxelgrid.py
+matlab A1_makehdf5data_for_sample.m
+python voxelgrid_makehdf5.py
+```
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
 Attribution-NonCommercial 4.0 International License</a>.
+
+
+
