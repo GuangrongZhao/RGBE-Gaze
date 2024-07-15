@@ -133,14 +133,11 @@ python voxelgrid_makehdf5.py
 If you organize data folders as above,you can train the model using the following commands
 
 ```
-python train.py --data_path processed_data/data_network_training_for_event_method_eva/ 
---model_read_path processed_data/pre_trained_models/checkpoints
---result_save_path processed_data/pre_trained_models_for_event_method_eva/checkpoints
+python train.py --data_path RGBE_Gaze_dataset/processed_data/data_network_training_for_event_method_eva/ 
+--model_read_path RGBE_Gaze_dataset/processed_data/pre_trained_models/checkpoints
+--result_save_path RGBE_Gaze_dataset/processed_data/pre_trained_models_for_event_method_eva/checkpoints
 ```
-
-Optional arguments can be passed :
-* `--whicheye`  to select which eye data to use for training, such as "L" or "R".
-* `--batch_size ` 
+ 
 
 #### Evaluation
 The following code provides the evaluation method:
