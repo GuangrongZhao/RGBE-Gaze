@@ -130,7 +130,7 @@ matlab A1_makehdf5data_for_sample.m
 python voxelgrid_makehdf5.py
 ```
 #### Training
-To train the DL-based Pupil Segmentation network models, run this command:
+To train the models, run this command:
 
 ```
 python train.py 
