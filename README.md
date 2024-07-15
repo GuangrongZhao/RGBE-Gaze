@@ -127,7 +127,7 @@ pip install -r requirements.txt
 Run the following command to do the preprocessing
 
 ```
-python normalization_example_for_convert_frame.py (refer to Section 4.3 Pre-processing of the paper,pre-processing is to reduce the variation in the subject’s head pose, which can make the learning-based approach more efficient)
+python normalization_example_for_convert_frame.py (Pre-processing is to reduce the variation in the subject’s head pose, which can make the learning-based approach more efficient)
 python generate_events_voxelgrid.py (Convert event stream to voxelgrid representation）
 matlab A1_makehdf5data_for_sample.m （Identify the temporally closest frame-event voxel pair to
 form the labelled samples used for training and testing) 
