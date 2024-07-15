@@ -73,9 +73,6 @@ if __name__ == "__main__":
     parser.add_argument("--network", default="DilatedNet_voxel_grid", help="The type of network")
     parser.add_argument("--data_path", default="G:/remote_apperance_gaze_dataset/processed_data/data_network_training_for_event_method_eva/",
                         help="Path to the dataset")
-    parser.add_argument("--model_read_path",
-                        default="G:/remote_apperance_gaze_dataset/processed_data/pre_trained_models/checkpoints",
-                        help="Path to read the model checkpoints")
     parser.add_argument("--result_save_path",
                         default="G:/remote_apperance_gaze_dataset/processed_data/pre_trained_models_for_event_method_eva/checkpoints",
                         help="Path to save the model checkpoints")
