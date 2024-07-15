@@ -137,7 +137,6 @@ If you organize data folders as above,you can train the model using the followin
 
 ```
 python train_voxel_grid_pair.py --data_path RGBE_Gaze_dataset/processed_data/data_network_training_for_event_method_eva/ 
---model_read_path RGBE_Gaze_dataset/processed_data/pre_trained_models/checkpoints
 --result_save_path RGBE_Gaze_dataset/processed_data/pre_trained_models_for_event_method_eva/checkpoints
 ```
  
