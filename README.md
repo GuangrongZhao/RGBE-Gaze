@@ -133,7 +133,9 @@ python voxelgrid_makehdf5.py
 To train the models, run this command:
 
 ```
-python train.py 
+python train.py --data_path processed_data/data_network_training_for_event_method_eva/ 
+--model_read_path processed_data/pre_trained_models/checkpoints
+--result_save_path processed_data/pre_trained_models_for_event_method_eva/checkpoints
 ```
 
 Optional arguments can be passed :
