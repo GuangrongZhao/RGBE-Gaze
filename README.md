@@ -157,6 +157,11 @@ If you want to run another benchmark, you can run the following command
 python train_voxel_grid_pair_only_frame_branch.py
 python evaluation_voxel_grid_pair_only_frame_branch.py
 ```
+The code for the other methods is in the **frame_based_benchmarking_methods** folder
+#### Evaluation result
+<div align=center style="display:flex;">
+ <img src="picture/different_methods_new_00.png" alt="iou" style="flex:1;" width="900" height="300" >
+</div>
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />
 This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons
