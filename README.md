@@ -17,7 +17,7 @@ RGBE-Gaze introduces first event-based large-scale and multimodal dataset for hi
 
 RGBE-Gaze present a hybrid frame-event based gaze tracking benchmarking method tailored to the collected dataset.
 <div align=center style="display:flex;">
- <img src="picture/system_overview_new_00.png" alt="iou" style="flex:1;" width="900" height="400" >
+ <img src="picture/system_overview_new_00.png" alt="iou" style="flex:1;" width="900" height="350" >
 </div>
 
 [//]: # (![summary]&#40;pictures/samples.png&#41;)
