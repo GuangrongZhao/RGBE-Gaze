@@ -1,4 +1,4 @@
-# RGBE-Gaze:Journey Towards High Frequency Remote Gaze Tracking with Event Cameras
+# RGBE-Gaze:A Large-scale Event-based Multimodal Dataset for High Frequency Remote Gaze Tracking
 ## Citation
  If you are using this dataset in your paper, please cite the following paper :
 ```
