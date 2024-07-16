@@ -142,7 +142,7 @@ If you organize data folders as above,you can train the RGBE-Gaze model using th
 python train_voxel_grid_pair.py --data_path RGBE_Gaze_dataset/processed_data/data_network_training_for_event_method_eva/ 
 --result_save_path RGBE_Gaze_dataset/processed_data/pre_trained_models_for_event_method_eva/checkpoints
 ```
- (The preprocessed data that can be used directly for network training tests can be found in: RGBE_Gaze_dataset/processed_data/data_network_training_for_event_method_eva)
+The preprocessed data that can be used directly for network training tests can be found in: ```RGBE_Gaze_dataset/processed_data/data_network_training_for_event_method_eva```
 
 #### Evaluation
 The following code provides the evaluation method:
@@ -156,7 +156,7 @@ If you want to run another benchmark i.e., RGBE-Gaze (w/o EB) , you can run the 
 python train_voxel_grid_pair_only_frame_branch.py
 python evaluation_voxel_grid_pair_only_frame_branch.py
 ```
-The code for other frame-based methods is located in the **frame_based_benchmarking_methods** folder, and you can run them in a similar manner to the RGBE-Gaze method.
+The code for other frame-based methods is located in the ```frame_based_benchmarking_methods``` folder, and you can run them in a similar manner to the RGBE-Gaze method.
 #### Evaluation result for different subjects
 
 The following is the average angular errors of different subjects with different benchmarking_methods.
