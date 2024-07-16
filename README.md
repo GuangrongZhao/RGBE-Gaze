@@ -127,9 +127,12 @@ pip install -r requirements.txt
 Run the following command to do the preprocessing
 
 ```
+cd ./python_preprocess
 python normalization_example_for_convert_frame.py 
-python generate_events_voxelgrid.py 
-matlab A1_makehdf5data_for_sample.m 
+python generate_events_voxelgrid.py
+cd ../matlab_preprocess
+matlab A1_makehdf5data_for_sample.m
+cd ../python_preprocess
 python voxelgrid_makehdf5.py 
 ```
 #### Training
