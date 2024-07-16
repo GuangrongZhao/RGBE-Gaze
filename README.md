@@ -136,7 +136,7 @@ cd ../python_preprocess
 python voxelgrid_makehdf5.py 
 ```
 #### Training
-If you organize data folders as above,you can train the RGBE-Gaze model using the following commands
+If you organize data folders as above, you can train the RGBE-Gaze model using the following commands
 
 ```
 python train_voxel_grid_pair.py --data_path RGBE_Gaze_dataset/processed_data/data_network_training_for_event_method_eva/ 
