@@ -150,13 +150,14 @@ The following code provides the evaluation method:
 ```
 python evaluation_voxel_grid_pair.py --datasetpath RGBE_Gaze_dataset
 ```
+If you want to load the pretrained model, you can find it in ```RGBE_Gaze_dataset/processed_data/pre_trained_models_for_event_method_eva```
 
 If you want to run another benchmark i.e., RGBE-Gaze (w/o EB) , you can run the following command in a similar manner to the RGBE-Gaze method for training and evaluation.
 ```
 python train_voxel_grid_pair_only_frame_branch.py
 python evaluation_voxel_grid_pair_only_frame_branch.py
 ```
-The code for other frame-based methods is located in the ```frame_based_benchmarking_methods``` folder, and you can run them in a similar manner to the RGBE-Gaze method.
+The code for other frame-based methods is located in the ```frame_based_benchmarking_methods``` folder, and their pretrained models are in ```RGBE_Gaze_dataset/processed_data/pre_trained_ models_for_frame_method_eva``` folder, you can run them in a similar manner to the RGBE-Gaze method.
 #### Evaluation result for different subjects
 
 The following is the average angular errors of different subjects with different benchmarking_methods.
