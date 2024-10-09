@@ -5,7 +5,7 @@
 @inproceedings{  
   title = {RGBE-Gaze: A Large-scale Event-based Multimodal Dataset for High Frequency Remote Gaze Tracking},  
   author = {Guangrong Zhao, Yiran Shen, Chenlong Zhang, Zhaoxin Shen, Yuanfeng Zhou and Hongkai Wen},
-  booktitle = {},
+  booktitle = {IEEE Transactions on Pattern Analysis and Machine Intelligence 2024},
   year = {2024}  
 } 
 ```
