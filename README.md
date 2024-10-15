@@ -61,9 +61,9 @@ This directory contains 66 subdirectories corresponding to 66 participants i.e.,
 **convert2eventspace** folder offers the RGB Images converted from the raw RGB Images using the homography matrix T_{h} i.e., 'align_frame_event_pixel/tform_total.mat', the homography matrix T_{h} is calculated using the code 'align_frame_event_pixel/calculate_homography.m', and the code transforms the 66 participant's raw RGB Images to align the event stream's space is presented in  'align_frame_event_pixel/transfer_image_homography.m'. 
 
 In addition, the **convert2eventspace** folder include three '.txt' file.
-- **timestamp.txt** records the internal hardware timestamp provided by FLIR BFS-U3-16S2C.
-- **timestamp_win.txt** records the Windows system time provided by function 'time.time()' in Python, the first two lines represent the moments before and after the FLIR camera acquisition interface is activated.
-- **timestamp_cpu.txt** records the CPU timestamp provided by function 'cv2.getTickCount' of opencv, the first two lines also represent the moments before and after the FLIR camera acquisition interface is activated.
+- **timestamp.txt** records the internal hardware timestamp for each frame provided by FLIR BFS-U3-16S2C.
+- **timestamp_win.txt** records the Windows system time for each frame provided by function 'time.time()' in Python, the first two lines represent the moments before and after the FLIR camera acquisition interface is activated.
+- **timestamp_cpu.txt** records the CPU timestamp for each frame provided by function 'cv2.getTickCount' of opencv, the first two lines also represent the moments before and after the FLIR camera acquisition interface is activated.
 
 
 #### 2. prophesee
