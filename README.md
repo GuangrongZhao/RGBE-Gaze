@@ -81,7 +81,7 @@ In addition, the **gazepoint** folder include another two '.txt' file.
 - **time_cpu.txt** records the CPU timestamp provided by function 'cv2.getTickCount' of OpenCV, the second line represents the moment when the computer received the first ACK message of gazepoint.
 
 #### 4. click_gt_cpu.txt
-**click_gt_cpu.txt** records the CPU timestamp when subject click the stationary stimulus.
+**click_gt_cpu.txt** records the sparse PoG ground truth and the CPU timestamp when subject click the stationary stimulus.
 
 ## Running the Benchmark
 We adopt the most commonly used metric, in remote gaze tracking tasks, i.e., **angular error (in degree)**, to evaluate various benchmarking methods.
