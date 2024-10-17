@@ -62,8 +62,8 @@ This directory contains 66 subdirectories corresponding to 66 participants i.e.,
 
 In addition, the **convert2eventspace** folder include three '.txt' file.
 - **timestamp.txt** records the internal hardware timestamp for each frame provided by FLIR BFS-U3-16S2C.
-- **timestamp_win.txt** records the Windows system time for each frame provided by function 'time.time()' in Python, the first two lines represent the moments before and after the FLIR camera acquisition interface is activated.
-- **timestamp_cpu.txt** records the CPU timestamp for each frame provided by function 'cv2.getTickCount' of opencv, the first two lines also represent the moments before and after the FLIR camera acquisition interface is activated.
+- **timestamp_win.txt** records the Windows system time for each frame provided by function 'time.time()' in Python, the first two lines represent the moments before and after the FLIR camera acquisition interface is activated. This timestamp can be used to synchronise the event camera and gazepoint eye tracker.
+- **timestamp_cpu.txt** records the CPU timestamp for each frame provided by function 'cv2.getTickCount' of opencv, the first two lines also represent the moments before and after the FLIR camera acquisition interface is activated. This timestamp can be used to synchronise the sparse PoG ground truth.
 
 
 #### 2. prophesee
